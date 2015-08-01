@@ -5,17 +5,43 @@
 	<title>Document</title>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/buzz/1.1.10/buzz.min.js"></script>
 <script src="core.js" ></script>
+<style>
+	.panel{
+		width: 400px;
+		height: auto;
+		background-color: rgba(123,123,123,0.9);
+		border-radius: 20px;
+		padding: 20px;
+		position: relative;
+		margin: 0 auto;
+	}
+	.inp{
+		font-size: 20px;
+		margin-top: 5px;
+		font-family: Arial;
+	}
+	.panel button {
+		font-size: 25px;
+		width: 70px;
+		height: auto;
+
+	}
+	.panel input {
+		padding: 5px;
+		font-size: 20px;
+	}
+	.panel span {
+		font-size: 30px;
+	}
+</style>
 </head>
 <body>
-	
-	enter duration:<input id="duration" type="text">
-	<br>
-	enter interval: <input id="interval" type="text">
-	<br>
-	go:
+	<div class="panel">
+	<div class="inp">enter duration:<input id="duration" type="text"></div>
+	<div class="inp">enter interval: <input id="interval" type="text"></div>
 	<button id="go">go</button>
 	<br>
 	<span id="errorMessage" ></span>
-
+	</div>
 </body>
 </html>
